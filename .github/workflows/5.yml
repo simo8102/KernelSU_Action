@@ -19,7 +19,7 @@ jobs:
 
       - name: Compile kernel
         working-directory: kernel
-        run: make O=out ARCH=arm64 vendo/lahaina-qgki_defconfig
+        run: make O=out ARCH=arm64 vendor/lahaina-qgki_defconfig
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
